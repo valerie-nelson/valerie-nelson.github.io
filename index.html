@@ -17,15 +17,11 @@ $(document).ready(function(){
 
 
 
-//When the Image is hovered upon, show the hidden div using Mouseover
-$('.tab').mouseover(function() {
-$('.tabinfo').show();
-});
 
-//When the Image is hovered away from, hide the div using Mouseout
-$('.tab').mouseout(function() {
-$('.tabinfo').hide();
-});
+
+function changeDivImage() {
+    $("body").toggleClass(".blue");
+}
 
 
 </script>
@@ -49,10 +45,10 @@ $('.tabinfo').hide();
     @font-face { font-family: Radiant; src: url('Radiant XCond ICG.ttf'); }
     
     
-    body {
-    background: white;
     
-    }
+    
+    body { background: white; }
+	body.blue { background: blue; }
     
     
     

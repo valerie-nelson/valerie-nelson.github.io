@@ -16,7 +16,7 @@
 $(function() {
     var moveLeft = 0;
     var moveDown = 0;
-    $('.sunny').hover(function(e) {
+    $('.sunny,.tab').hover(function(e) {
    
         var target = '#' + ($(this).attr('data-popbox'));
          
@@ -28,7 +28,7 @@ $(function() {
         $(target).hide();
     });
  
-    $('.sunny').mousemove(function(e) {
+    $('.sunny,.tab').mousemove(function(e) {
         var target = '#' + ($(this).attr('data-popbox'));
          
         leftD = e.pageX + parseInt(moveLeft);

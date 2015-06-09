@@ -15,6 +15,16 @@ $(document).ready(function(){
 });
 
 
+
+('.tab').hover(
+  function () {
+    $(".tabinfo").show();
+  }, 
+  function () {
+    $(".tabinfo").hide();
+  }
+);
+
 </script>
 
     <meta charset="utf-8">
@@ -149,6 +159,24 @@ $(document).ready(function(){
     }
     
     
+    .tabinfo {
+    font-family: helvetica;
+    font-size: 11px;
+    line-height: 14px;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 200px;
+    font-weight: bold;
+    color: black;
+    -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    }
+    
+    
     
     
     
@@ -183,7 +211,8 @@ $(document).ready(function(){
     
     
     <div class="info1">This is the current portfolio website for Valerie Autumn Nelson.</div>
-    
+    <div class="tabinfo">Working with my my fellow design studio, Petrichor, we were to create posters and design tickets for RISD's Spring concert, "Take A Break".
+    </div>
    
     </body>
     

@@ -21,7 +21,7 @@ $(document).ready(function(){
 $(function() {
     var moveLeft = 0;
     var moveDown = 0;
-    $('img').hover(function(e) {
+    $('.sunny').hover(function(e) {
    
         var target = '#' + ($(this).attr('data-popbox'));
          
@@ -33,7 +33,7 @@ $(function() {
         $(target).hide();
     });
  
-    $('img').mousemove(function(e) {
+    $('.sunny').mousemove(function(e) {
         var target = '#' + ($(this).attr('data-popbox'));
          
         leftD = e.pageX + parseInt(moveLeft);

@@ -39,7 +39,7 @@ $(document).ready(function(){
     
     
     body {
-    background: #F6F6F0;
+    background: white;
     
     }
     
@@ -123,7 +123,7 @@ $(document).ready(function(){
     img:hover {
      position: absolute;
      z-index:555555 !important;
-    border: solid 2px black;
+    border: solid 0px black;
     -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -170,7 +170,14 @@ $(document).ready(function(){
     }
     
     
-    .tab:hover .tabinfo
+    
+    div.tab div.tabinfo
+{
+    display:none;
+}
+
+    
+    div.tab:hover div.tabinfo
 {
  display:block;   
 }

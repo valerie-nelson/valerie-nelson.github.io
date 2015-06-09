@@ -10,10 +10,8 @@
 <script type="text/javascript">
 
 
-$('img').hide().one("load",function(){
-    $(this).fadeIn(1000);
-}).each(function(){
-    if(this.complete) $(this).trigger("load");
+$(document).ready(function(){
+    $(".tab,.floss,.trail,.ab,.cdojo").hide(0).delay(500).fadeIn(3000)
 });
 
 

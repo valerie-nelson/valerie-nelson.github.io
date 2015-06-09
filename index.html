@@ -16,14 +16,16 @@ $(document).ready(function(){
 
 
 
-('.tab').hover(
-  function () {
-    $(".tabinfo").show();
-  }, 
-  function () {
-    $(".tabinfo").hide();
-  }
-);
+$(document).ready(function() {
+ $('.tabinfo','.pic2desc').hide();
+
+
+
+ $('.tab').hover(function() {
+   $('.tabinfo').show();
+},function() {
+  $('.tabinfo').hide();
+});
 
 </script>
 
@@ -168,7 +170,7 @@ $(document).ready(function(){
     bottom: 20px;
     width: 200px;
     font-weight: bold;
-    display:none;
+    
     color: black;
     -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);

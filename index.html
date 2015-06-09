@@ -15,14 +15,18 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-	$(".tab").hover(function() {
-		$(this).attr(".tabinfo");
-			}, function() {
-		$(this).attr();
-	});
+$('.tabinfo').hide();
+
+
+//When the Image is hovered upon, show the hidden div using Mouseover
+$('.tab').mouseover(function() {
+$('.tabinfo').show();
 });
 
+//When the Image is hovered away from, hide the div using Mouseout
+$('.tab').mouseout(function() {
+$('.tabinfo').hide();
+});
 
 
 </script>
@@ -47,7 +51,7 @@ $(document).ready(function(){
     
     
     body {
-    background: gray;
+    background: white;
     
     }
     
@@ -168,7 +172,7 @@ $(document).ready(function(){
     bottom: 20px;
     width: 200px;
     font-weight: bold;
-    display: none;
+    
     color: black;
     -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);

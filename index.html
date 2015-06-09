@@ -15,6 +15,12 @@ $(document).ready(function(){
 });
 
 
+$(".tab").hover(function() {
+    $(this).next(".tabinfo").show(); //hover in
+}, function() {
+    $(this).next(".tabinfo").hide(); //hover out
+});
+
 
 
 </script>
@@ -39,7 +45,7 @@ $(document).ready(function(){
     
     
     body {
-    background: black;
+    background: gray;
     
     }
     
@@ -172,13 +178,7 @@ $(document).ready(function(){
     
     
  
-
-    
-    .tab:hover + .tabinfo
-{
- display:block;   
-}
-    
+  
     
     
     

@@ -33,6 +33,30 @@ $(function() {
 });
 
 
+$(document).ready(function() {
+     $('.me').click(function() {
+          $('.mepopup').animate({
+               height: 'toggle'
+               }, 400
+          );
+          $('.mepopup').animate({
+               height: 'toggle'
+               }, 200
+          ); 
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
 
 
 $(document).ready(function(){
@@ -312,25 +336,20 @@ $(document).ready(function(){
     
  	
 
-	.white_content {
+	.mepopup {
 	display: none;
-	position: fixed;
-	font-family: "adobe-jenson-pro-subhead";
-	font-size: 24px;
-	top: 50%;
-	left: 50%;
-	width: 50%;
-	height: 80%;
-	padding: 16px;
-	border: 1px solid #1548ff;
-	background-color: white;
-	z-index:1002;
-	overflow: auto;
-	-webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	}
+    position: fixed;
+    left: 300px;
+    top: 30px;
+    color: #1548ff;
+    padding: 15px;
+    background: white;
+    border: solid 1px #1548ff;
+    z-index: 99999;
+    width: 250px;
+    font-family: "adobe-jenson-pro-subhead";
+    font-size: 24px;
+    }
   
     
     
@@ -437,15 +456,16 @@ $(document).ready(function(){
     <div class="info1">This is the current portfolio website for Valerie Autumn Nelson.</div>
     
     
-    
-    
-    
-       
-       	<div id="simplediv" style="background-color:yellow;border:1px solid black;display:none;width:200px;height:200px;z-index:99999;">Click anywhere in the document to auto-close me</div>
 
-		<a href="#" onclick="Popup.show('simplediv');return false;">
 		<div class="me"></div>
-		</a>
+		<div class="mepopup" style="display:none"><br><br><br>Often times, special objects are placed behind glass within a museum or gallery space, and are only able to be experienced in one way: through vision.
+ <br><br>Here at Touch Exhibit, we believe the sense of touch to be crucial towards our understanding of the world around us.
+We now present to you, the former "viewer", the ability to interact and touch what you normally can not.
+Click on an object for the full experience.
+<br>
+<img src="http://40.media.tumblr.com/19f3f07c05a99a238ebc8fec17c1179e/tumblr_npqgfuGubK1tjlk3fo1_1280.jpg">
+    
+  </div>
         
         
    

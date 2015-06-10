@@ -34,7 +34,7 @@ $(function() {
 
 
 $(document).ready(function() {
-     $('.me').click(function() {
+     $('.me,.close').click(function() {
           $('.mepopup,.close').animate({
                height: 'toggle'
                }, 400
@@ -336,8 +336,9 @@ $(document).ready(function(){
     position: fixed;
     left: 500px;
     top: 30px;
-    size: 100%;
+    background-size: 100%;
     z-index: 99999;
+    background-image: url('close.gif');
     }
  	
 
@@ -465,7 +466,7 @@ $(document).ready(function(){
     
 
 		<div class="me"></div>
-		<div class="close" src="close.gif"></div>
+		<div class="close" style="display:none"></div>
 		<div class="mepopup" style="display:none">Welcome<br><br><br>Often times, special objects are placed behind glass within a museum or gallery space, and are only able to be experienced in one way: through vision.
  <br><br>Here at Touch Exhibit, we believe the sense of touch to be crucial towards our understanding of the world around us.
 We now present to you, the former "viewer", the ability to interact and touch what you normally can not.

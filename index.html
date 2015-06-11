@@ -35,7 +35,7 @@ $(function() {
 
 $(document).ready(function() {
      $('.me,.meclose').click(function() {
-          $('.mepopup,.meclose').animate({
+          $('.mepopup,.meclose,.newbg').animate({
                height: 'toggle'
                }, 400
           );
@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
      $('.mapping,.mappingclose').click(function() {
-          $('.mappingpopup,.mappingclose').animate({
+          $('.mappingpopup,.mappingclose,.newbg').animate({
                height: 'toggle'
                }, 400
           );
@@ -116,7 +116,15 @@ $(document).ready(function(){
     
     }
     
-	
+	.newbg {
+	background: rgba(253,248,243,0.5);
+	position:fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 99994;
+	}
     
     
     
@@ -450,7 +458,7 @@ $(document).ready(function(){
 	<img style="width:100%" src="https://40.media.tumblr.com/d5ebf78bc4306bb97f4d31be619e4123/tumblr_nprjquyjjh1tjlk3fo1_1280.png">
     </center>
 	<br>
-	Mapping the experience of playing a video game for one four-level race. The poster includes objective maps, how I played the levels, and my attention-span while doing so.
+	Mapping the experience of playing a video game for one four-level race. The poster includes objective maps, my posture while playing the levels, and my attention-span while doing so.
 	<br>
 	</div>
 	
@@ -526,7 +534,7 @@ $(document).ready(function(){
 		</div>
         
         
-   
+   <div class="newbg" style="display:none"></div>
     </body>
     
     

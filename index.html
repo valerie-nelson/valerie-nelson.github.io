@@ -54,6 +54,27 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+     $('.mapping,.close').click(function() {
+          $('.mappingpopup,.close').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
 
 
 $(document).ready(function(){
@@ -346,7 +367,7 @@ $(document).ready(function(){
     }
  	
 
-	.mepopup {
+	#popup {
 	display: none;
     position: fixed;
     left: 345px;
@@ -410,10 +431,24 @@ $(document).ready(function(){
 	
 	<div id="pop2" class="boxes">Working with my my fellow design studio, Petrichor, we were to create posters and design tickets for RISD's Spring concert, "Take A Break".
     </div>
+    
+    
+    
 	
 	<div id="pop3" class="boxes">
-	Mapping the experience of playing a video game for one four-level race. The poster includes objective maps, how I played the levels, and my attention-span while doing so.
-	</div>
+	Mario Kart 64 Mapping Playthrough</div>
+	
+	<div class="mappingpopup" id="popups" style="display:none">
+		<center>
+		<img style="width:100%" src="valabout.gif">
+		</center>
+		<br>
+		Mapping the experience of playing a video game for one four-level race. The poster includes objective maps, how I played the levels, and my attention-span while doing so.
+	
+		<br>
+		</div>
+	
+	
 	
 	<div id="pop4" class="boxes">
 	At A.W. Dreyfoos School of the Arts, I painted many illustrations that represented ideas surrounding dislocation, isolation, and day-dreaming, through specific imagery and narratives influenced by science fiction.
@@ -471,7 +506,7 @@ $(document).ready(function(){
 
 		<div class="me"></div>
 		<div class="close" style="display:none"></div>
-		<div class="mepopup" style="display:none">
+		<div class="mepopup" id="popups" style="display:none">
 		<center>
 		<img style="width:100%" src="valabout.gif">
 		</center>
@@ -481,11 +516,8 @@ $(document).ready(function(){
 		She is very fascinated with how the media portrays pop stars, especially the young ones. 
 		She also dreams of becoming a popstar, herself, one day. She is also always constantly being nostalgic so it is possible that her childhood memories may emerge from within her school projects.
 		She is allergic to hostility and she can also be corny.
-
-<br>
-
-    
-  </div>
+		<br>
+		</div>
         
         
    

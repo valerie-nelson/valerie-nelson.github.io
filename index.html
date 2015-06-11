@@ -34,8 +34,8 @@ $(function() {
 
 
 $(document).ready(function() {
-     $('.me,.close').click(function() {
-          $('.mepopup,.close,#pop3').animate({
+     $('.me,.meclose').click(function() {
+          $('.mepopup,.meclose').animate({
                height: 'toggle'
                }, 400
           );
@@ -55,8 +55,8 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-     $('.mapping,.close').click(function() {
-          $('.mappingpopup,.close').animate({
+     $('.mapping,.mappingclose').click(function() {
+          $('.mappingpopup,.mappingclose,#pop3').animate({
                height: 'toggle'
                }, 400
           );
@@ -353,7 +353,7 @@ $(document).ready(function(){
     }
     
     
-    .close {
+    #close {
     display: none;
     position: fixed;
     left: 791px;
@@ -439,6 +439,7 @@ $(document).ready(function(){
 	Mario Kart 64 Mapping Playthrough</div>
 	
 	<div class="mappingpopup" id="popups" style="display:none">
+	<div class="mappingclose" id="close" style="display:none"></div>
 		<center>
 		<img style="width:100%" src="http://40.media.tumblr.com/b8c0f6ec4f83ab5673fdbcd2c343bf62/tumblr_npqgj9ENXz1tjlk3fo1_1280.png">
     
@@ -506,7 +507,7 @@ $(document).ready(function(){
     
 
 		<div class="me"></div>
-		<div class="close" style="display:none"></div>
+		<div class="meclose" id="close" style="display:none"></div>
 		<div class="mepopup" id="popups" style="display:none">
 		<center>
 		<img style="width:100%" src="valabout.gif">

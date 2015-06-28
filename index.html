@@ -207,6 +207,30 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function() {
+     $('.header1,.header2,.headerclose').click(function() {
+          $('.headerpopup,.headerclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+
+
 $(document).ready(function(){
     $(".tab,.floss,.trail,.ab,.cdojo,.te,.sunny,.aeon1,.gordo,.jlcir,.mapping,.pets,.posneg,.mg,.fcooc,.sicons,.worl,.lmh").hide(0).delay(1000).fadeIn(1000)
 });
@@ -567,6 +591,22 @@ $(document).ready(function(){
     
     <div class="header"></div>
     <div class="header2"></div>
+    <div class="headerpopup" id="popups" style="display:none">
+	<div class="headerclose" id="close" style="display:none"></div>
+	<br>
+	<br>
+	<center>
+	<a href="">email</a>
+	<a href="">instagram</a>
+	<a href="">tumblr</a>
+	<a href="">cargo</a>
+	<a href="">behance</a>
+	</center>
+	<br><br>
+	</div>
+    
+    
+    
     <div class="valerie"><a href="http://www.valerie-nelson.com/about"></a>
     </div>
     <img id="small" data-popbox="pop3" class="mapping" src="http://40.media.tumblr.com/b8c0f6ec4f83ab5673fdbcd2c343bf62/tumblr_npqgj9ENXz1tjlk3fo1_1280.png">
@@ -589,6 +629,10 @@ $(document).ready(function(){
     <img id="small" data-popbox="pop16" class="sicons" src="https://41.media.tumblr.com/d798b3c7218d8a0bceac641469840f58/tumblr_nq8y5pYV3L1tjlk3fo1_1280.jpg">
     <img id="small" data-popbox="pop17" class="lmh" src="https://40.media.tumblr.com/f2d930601c798fd039ed6c23734e18af/tumblr_nqd8pqe5GD1tjlk3fo1_1280.png">
     <img id="small" data-popbox="pop18" class="worl" src="https://38.media.tumblr.com/ec13ee47c023c961486709ba48da4234/tumblr_nqd6owXm3W1tjlk3fo1_1280.gif">
+    
+    
+    
+    
     <div id="pop1" class="boxes">
 	Sunny 104.3 website.
 	</div>
@@ -734,6 +778,7 @@ $(document).ready(function(){
 	<div class="petspopup" id="popups" style="display:none">
 	<div class="petsclose" id="close" style="display:none"></div>
 	valspetportraits.com
+	<br>
 	<br>a website to request and view watercolor pet portrait commissions.
 	<br>
 	<br>
@@ -760,6 +805,7 @@ $(document).ready(function(){
 	<div id="pop16" class="boxes">
 	Surrealist Iconography.
 	</div>
+	
 	
 	<div id="pop17" class="boxes">
 	<i>Love Me Harder</i>, short film.

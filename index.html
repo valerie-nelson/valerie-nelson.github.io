@@ -76,21 +76,24 @@
    
   
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes info rotation {
     from {-webkit-transform: rotate(0deg);}
     to   {-webkit-transform: rotate(359deg);}
 }
 
     
     
-    
+@-webkit-keyframes me rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
    
 
 	.info {
 	
-    position: absolute;
-    left: 350px;
-    top: 500 px;
+    position: fixed;
+    left: 300px;
+    top: 600 px;
     color: white;
     padding: 20px;
     background: none;
@@ -101,7 +104,7 @@
     height: 500px;
     font-family: "adobe-jenson-pro-subhead";
     font-size: 24px;
-    -webkit-animation: rotation 300s infinite linear;
+    -webkit-animation: info rotation 300s infinite linear;
 
     }
     
@@ -109,7 +112,7 @@
     
     .me {
 	
-    position: absolute;
+    position: fixed;
     left: 250px;
     top: 600 px;
     color: black;
@@ -121,7 +124,7 @@
     width: 500px;
     height: 500px;
     
-    -webkit-animation: rotation 300s infinite linear;
+    -webkit-animation: me rotation 300s infinite linear;
 
     }
   

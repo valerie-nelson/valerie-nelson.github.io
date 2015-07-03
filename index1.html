@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="//use.typekit.net/keq6phf.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">
+
+
+
+
+$(function() {
+    var moveLeft = 0;
+    var moveDown = 0;
+    $('#small,.aeon1').hover(function(e) {
+   
+        var target = '#' + ($(this).attr('data-popbox'));
+         
+        $(target).show();
+        moveLeft = $(this).outerWidth();
+        moveDown = ($(target).outerHeight() / 2);
+    }, function() {
+        var target = '#' + ($(this).attr('data-popbox'));
+        $(target).hide();
+    });
+ 
+    
+    
+});
+
+
+$(document).ready(function() {
+     $('.me,.meclose').click(function() {
+          $('.mepopup,.meclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+$(document).ready(function() {
+     $('.mapping,.mappingclose').click(function() {
+          $('.mappingpopup,.mappingclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+$(document).ready(function() {
+     $('.trail,.trailclose').click(function() {
+          $('.trailpopup,.trailclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+$(document).ready(function() {
+     $('.floss,.flossclose').click(function() {
+          $('.flosspopup,.flossclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+$(document).ready(function() {
+     $('.te,.teclose').click(function() {
+          $('.tepopup,.teclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+$(document).ready(function() {
+     $('.jlcir,.jlcirclose').click(function() {
+          $('.jlcirpopup,.jlcirclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+$(document).ready(function() {
+     $('.pets,.petsclose').click(function() {
+          $('.petspopup,.petsclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+
+
+$(document).ready(function() {
+     $('.lmh,.lmhclose').click(function() {
+          $('.lmhpopup,.lmhclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+$(document).ready(function() {
+     $('.header,.headerclose').click(function() {
+          $('.headerpopup,.headerclose').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
+     
+
+
+
+
+
+});
+
+
+
+
+
+$(document).ready(function(){
+    $(".tab,.floss,.trail,.ab,.cdojo,.te,.sunny,.aeon1,.gordo,.jlcir,.mapping,.pets,.posneg,.mg,.fcooc,.sicons,.worl,.lmh").hide(0).delay(1000).fadeIn(1000)
+});
+
+
+
+
+</script>
+
+    <meta charset="utf-8">
+    <title>Valerie Nelson</title>
+    <link rel="icon" 
+      	type="image/png" 
+      	href="favicon2.gif"/>
+    
+    
+    <style type="text/css">
+    
+    
+    @font-face { font-family: Motter-Corpus; src: url('Motter-Corpus-Std.ttf'); } 
+    
+    @font-face { font-family: Aeon; src: url('AeonRegular.otf'); }
+    
+    @font-face { font-family: serifgothic; src: url('itc-serif-gothic-lt-black.ttf'); }
+    
+    @font-face { font-family: Kabel-Black; src: url('Kabel-Black.ttf'); }
+    
+    @font-face { font-family: Radiant; src: url('Radiant XCond ICG.ttf'); }
+    
+    
+    
+    
+    body { 
+    background-image: url("bg2.gif");
+     
+    background-size: 100%;
+     
+    }
+    
+	.newbg {
+	background: rgba(57,56,64,0.2);
+	position:fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 99994;
+	}
+    
+    
+    
+    
+    .header {
+    background-image: url('vh2.gif');
+    width: 200px;
+    height: 100px;
+    background-size: 100%;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    z-index:99990;
+    cursor: pointer;
+    }
+    
+    .header:hover {
+    background-image: url('VH1.gif');
+    width: 200px;
+    height: 100px;
+    background-size: 100%;
+    z-index:99990;
+    
+    }
+    
+    .valerie {
+    font-family: Radiant;
+    line-height: 100px;
+    font-size: 90px;
+    position: absolute;
+    left: 50px;
+    width: 500px;
+    color: black;
+    font-weight: regular;
+    font-kerning: normal;
+    }
+    
+    .sunny {
+    top: 440px;
+    left: 83%;
+    width: 17%;
+    z-index: 33332;
+    }
+    
+    .aeon1  {
+    top: 950px;
+    left: 26%;
+    width: 23%;
+    z-index: 33334;
+    }
+    
+    
+    .posneg  {
+    top: 270px;
+    left: 73%;
+    width: 28%;
+    }
+    
+    
+    
+    .ab {
+    top: 1350px;
+    left: 24%;
+    width: 23%;
+    }
+    
+    
+    
+    .cdojo {
+    top: 2000px;
+    left: 52%;
+    width: 15%;
+    }
+    
+    .sicons {
+    top: 880px;
+    left: 48%;
+    width: 20%;
+    z-index: 33330;
+    }
+    
+    .floss {
+    top: 2000px;
+    left: 77%;
+    width: 20%;
+    }
+    
+    .te {
+    top: 440px;
+    left: 52%;
+    width: 26%;
+    z-index: 33330;
+    }
+    
+    .gordo {
+    top: 980px;
+    left: 75%;
+    width: 30%;
+    }
+    
+    .jlcir {
+    top: 1150px;
+    left: 75%;
+    width: 24%;
+    }
+    
+    .mapping {
+    top: 200px;
+    left: 40%;
+    width: 26%;
+    z-index: 33333;
+    }
+    
+    .pets {
+    top: 1200px;
+    left: 41%;
+    width: 23%;
+    z-index: 33331;
+    }
+    
+    .trail {
+    top: 1850px;
+    left: 30%;
+    width: 23%;
+    z-index: 33336;
+    }
+    
+    .mg {
+    top: 1350px;
+    left: 65%;
+    width: 15%;
+    }
+    
+    .fcooc {
+    top: 1590px;
+    left: 45%;
+    width: 35%;
+    }
+    
+    .tab {
+    top: 1750px;
+    left: 70%;
+    width: 30%;
+    }
+    
+    .lmh {
+    top: 750px;
+    left: 72%;
+    width: 34%;
+    z-index: 33331;
+    }
+    
+    .worl {
+    top: 650px;
+    left: 20%;
+    width: 18%;
+    }
+    
+    
+    
+    #small {
+    position: absolute;
+    border: solid 0px;
+    -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+    
+    #small:hover {
+     position: absolute;
+     z-index: 55555;
+     border: 1px solid black;
+     cursor: pointer;
+     box-shadow: 0px 0px 0px 0px #00ff78;
+    -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    }
+    
+    
+    
+    
+  
+    
+   
+    
+    p1 {
+    font-size: 48px;
+    line-height: 50px;
+    
+    }
+    
+    .tabinfo {
+    font-family: helvetica;
+    font-size: 11px;
+    line-height: 14px;
+    position: fixed;
+    left: 120px;
+    bottom: 20px;
+    width: 200px;
+    font-weight: bold;
+    display: none;
+    color: black;
+    -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    }
+    
+    .boxes {
+    display: none;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    color: #1548ff;
+    padding: 15px;
+    background: white;
+    border: solid 1px #1548ff;
+    z-index: 99995;
+    width: 250px;
+    font-family: "adobe-jenson-pro-subhead";
+    font-size: 24px;
+    
+    }
+    
+    .me {
+    background-image: url('vt1.gif');
+    background-size: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 10px;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    }
+    
+    
+    #close {
+    display: none;
+    position: fixed;
+    left: 860px;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    z-index: 99999;
+    background-image: url('close4.png');
+    cursor: pointer;
+    }
+ 	
+
+	#popups {
+	display: none;
+    position: fixed;
+    left: 310px;
+    top: 30px;
+    color: #1548ff;
+    padding: 20px;
+    background: white;
+    border: solid 1px #1548ff;
+    z-index: 99997;
+    overflow: auto;
+    width: 600px;
+    height: 80%;
+    font-family: "adobe-jenson-pro-subhead";
+    font-size: 24px;
+    }
+  
+   
+    
+    a {
+    
+    color: black;
+    font-family: "aktiv-grotesk"; sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: black;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color: blue;
+    }
+    
+    
+    .watch {
+    top: 500px;
+    left: 30%;
+    width: 150px;
+    position: absolute;
+    z-index: 55554;
+    }
+    
+    
+    </style>
+    
+    
+    
+    
+    </head>
+    
+    
+    
+    
+    <body>
+    
+    <div class="header"></div>
+    <div class="headerpopup" id="popups" style="display:none">
+	<div class="headerclose" id="close" style="display:none"></div>
+	
+	<br>
+	<br>
+	<center>
+	<a href="mailto:vnelson@risd.edu">email</a>
+	<br>
+	<a href="http://valerienel.tumblr.com/">tumblr</a>
+	<br>
+	<a href="http://cargocollective.com/valerienelson">cargo</a>
+	<br>
+	<a href="https://www.behance.net/valerienelson">behance</a>
+	<br>
+	<a href="https://vimeo.com/user10857223">vimeo</a>
+	<br>
+	<a href="https://instagram.com/valerienelson_/">art instagram</a>
+	<br>
+	<a href="https://instagram.com/vnaellesroine/">personal instagram</a>
+	</center>
+	<br><br>
+	
+	</div>
+    
+    
+    
+    <div class="valerie"><a href="http://www.valerie-nelson.com/about"></a>
+    </div>
+    <img id="small" data-popbox="pop3" class="mapping" src="http://40.media.tumblr.com/b8c0f6ec4f83ab5673fdbcd2c343bf62/tumblr_npqgj9ENXz1tjlk3fo1_1280.png">
+    <img id="small" data-popbox="pop2" class="tab" src="http://41.media.tumblr.com/c98e2190123d85d9fb852a006e391e3c/tumblr_npqgwyq5xw1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop13" class="posneg" src="http://36.media.tumblr.com/0537940a292b904a1efaf6456acd5dfc/tumblr_npqhq0B2IK1tjlk3fo1_1280.jpg">
+   
+    
+    <img id="small" data-popbox="pop4" class="trail" src="http://40.media.tumblr.com/101dc52108b7867f3e8c1b0903ddc6de/tumblr_npqgejiRJh1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop5" class="floss" src="http://40.media.tumblr.com/0f5d3c04a437e7bf11b41af3715e4b06/tumblr_npqgxfoK4j1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop6" class="ab" src="http://40.media.tumblr.com/19f3f07c05a99a238ebc8fec17c1179e/tumblr_npqgfuGubK1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop7" class="aeon1" src="https://40.media.tumblr.com/fd4b30e9b8af0b892eab638036ff8b70/tumblr_nq8y70xsQE1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop8" class="cdojo" src="http://41.media.tumblr.com/e2239e411ecd03599b48e2a1909dd5af/tumblr_npqgjy31x51tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop9" class="te" src="http://40.media.tumblr.com/5ac0e4c7a4098171a1375678b2f5d6f1/tumblr_npqgruAPp31tjlk3fo1_1280.png">
+    <a href="http://www.touchexhibit.click/sunny"><img id="small" data-popbox="pop1" class="sunny" src="http://38.media.tumblr.com/1ec1d0b026ea1711f947da5d5e8e6832/tumblr_npqgvk27OR1tjlk3fo1_500.gif"></a>
+    <img id="small" data-popbox="pop10" class="jlcir" src="http://36.media.tumblr.com/0e576ea23702edfce992a0ce45409dc2/tumblr_npqgwijhnI1tjlk3fo1_1280.png">
+    <img id="small" data-popbox="pop11" class="gordo" src="https://41.media.tumblr.com/4c4db795f4067c4324c49750bad1c963/tumblr_nqlvlgidYI1tjlk3fo1_1280.png">
+    <img id="small" data-popbox="pop12" class="pets" src="http://40.media.tumblr.com/dbb37b82c5109f8fb0c35cc1de37cd92/tumblr_npqgv05P6t1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop14" class="mg" src="https://36.media.tumblr.com/d9da1396f73d8ae01b0805d6a1d54e5e/tumblr_npqit0SIsX1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop15" class="fcooc" src="https://40.media.tumblr.com/f9b3b0203837a7fc91467e4b4ff85443/tumblr_npqj7tT17u1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop16" class="sicons" src="https://41.media.tumblr.com/d798b3c7218d8a0bceac641469840f58/tumblr_nq8y5pYV3L1tjlk3fo1_1280.jpg">
+    <img id="small" data-popbox="pop17" class="lmh" src="https://40.media.tumblr.com/f2d930601c798fd039ed6c23734e18af/tumblr_nqd8pqe5GD1tjlk3fo1_1280.png">
+    <img id="small" data-popbox="pop18" class="worl" src="https://38.media.tumblr.com/ec13ee47c023c961486709ba48da4234/tumblr_nqd6owXm3W1tjlk3fo1_1280.gif">
+    
+    
+    
+    
+    <div id="pop1" class="boxes">
+	Sunny 104.3 website.
+	</div>
+	
+	<div id="pop2" class="boxes">Working with my my fellow design studio, Petrichor, we were to create posters and design tickets for RISD's Spring concert, "Take A Break".
+    </div>
+    
+    
+    
+	
+	<div id="pop3" class="boxes">
+	Mario Kart 64 Playthrough Map</div>
+	
+	<div class="mappingpopup" id="popups" style="display:none">
+	<div class="mappingclose" id="close" style="display:none"></div>
+	Mario Kart 64 Playthrough Map
+	<br>
+	<br>
+	Mapping the experience of playing a video game for one four-level race. The poster includes objective maps, my posture while playing the levels, and my attention-span while doing so.
+	<br>
+	<br>
+	<center>
+	<img style="width:100%" src="http://40.media.tumblr.com/b8c0f6ec4f83ab5673fdbcd2c343bf62/tumblr_npqgj9ENXz1tjlk3fo1_1280.png">
+	<img style="width:100%" src="https://40.media.tumblr.com/32b69dd41f070448e9f987b2811da959/tumblr_nprjq2uEEN1tjlk3fo1_1280.png">
+	<img style="width:100%" src="https://41.media.tumblr.com/fa5dcc861b17e25d48f36fd0dd5debed/tumblr_nprjqgwCr91tjlk3fo1_1280.png">
+	<img style="width:100%" src="https://40.media.tumblr.com/d5ebf78bc4306bb97f4d31be619e4123/tumblr_nprjquyjjh1tjlk3fo1_1280.png">
+    </center>
+	
+	</div>
+	
+	
+	
+	<div id="pop4" class="boxes">
+	Paintings from 2011-2012
+	</div>
+    
+    
+    <div class="trailpopup" id="popups" style="display:none">
+	<div class="trailclose" id="close" style="display:none"></div>
+	Paintings from 2011-2012
+	<br>
+	<br>
+	At A.W. Dreyfoos School of the Arts, I painted many illustrations that represented ideas surrounding dislocation, isolation, and day-dreaming, through specific imagery and narratives influenced by science fiction.
+    <br><br>
+	<center>
+	<img style="width:100%" src="https://40.media.tumblr.com/353e96a88c5d13920b7982ba3e014903/tumblr_nqlv0drsPN1tjlk3fo1_1280.jpg">
+	<img style="width:100%" src="https://40.media.tumblr.com/72ffe6a7787ce9cade32148b9a51568d/tumblr_nqlv1fSbJ01tjlk3fo1_1280.jpg">
+	<img style="width:100%" src="https://40.media.tumblr.com/8a435b96872c40c032776c3b8e163b3c/tumblr_nqluzsADUx1tjlk3fo1_1280.jpg">
+	<img style="width:100%" src="https://41.media.tumblr.com/b5c3cf49ebf54749aba62b7023e762eb/tumblr_nqluz6cveD1tjlk3fo1_1280.jpg">
+    <img style="width:100%" src="https://41.media.tumblr.com/ee0f8c42cf6fe16be52bd68b0cca9bd5/tumblr_nqluy2XAkR1tjlk3fo1_1280.jpg">
+    <img style="width:100%" src="https://41.media.tumblr.com/5a8822a8db5c79a7543ee6163bede928/tumblr_nqlv2aHKBF1tjlk3fo1_1280.jpg">
+    </center>
+	</div>
+    
+    
+    
+    <div id="pop5" class="boxes">
+	Painting about the insecurities of my teeth.
+	</div>
+	
+	
+	<div class="flosspopup" id="popups" style="display:none">
+	<div class="flossclose" id="close" style="display:none"></div>
+	Painting about the insecurities of my teeth.
+	<br>
+	<br>
+	
+	<center>
+	<img style="width:100%" src="https://41.media.tumblr.com/ff88637c7b861f860bf2afb2a79ad6d4/tumblr_nqntvzajMm1tjlk3fo2_540.jpg">
+	<img style="width:100%" src="https://40.media.tumblr.com/0f5d3c04a437e7bf11b41af3715e4b06/tumblr_nqntvzajMm1tjlk3fo1_540.jpg">
+    </center>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div id="pop7" class="boxes">
+	A text typeface for Dennis Danvers' "Circuit of Heaven".
+	</div>
+	
+	<div id="pop6" class="boxes">
+	Proposed theme and poster for RISD's annual "Artist Ball". This theme is called "Minimalist Carnival".
+	</div>
+    
+    <div id="pop8" class="boxes">
+	Class Dojo is an application for teachers that allow them to rate their students based on individual behaviors, giving the student a green "+" number for proper behavior or a red “-” number for improper behavior.
+	<br><br>
+	There had been some discussion on how the act of recording and displaying a child's negative behavior can result in humiliation and a lack of motivation from the student. It can also show a sort of structural abuse, where the teacher has a great amount of power at their fingertips and could eventually diminish the students into mere numbers.
+    </div>
+    
+    
+    
+    <div id="pop9" class="boxes">
+	touchexhibit.click
+	</div>
+	
+	<div class="tepopup" id="popups" style="display:none">
+	<div class="teclose" id="close" style="display:none"></div>
+	touchexhibit.click
+	<br>a website about the lack of tangibility on the internet.
+	<br>
+	<br>
+	
+	<center>
+	<a href="http://www.touchexhibit.click">Click Here To Go To Site</a>
+	</center>
+	</div>
+	
+	
+	
+	<div id="pop10" class="boxes">
+	<i>June Leighton's Creative Intelligence Robot</i>, animation.
+	</div>
+	
+	
+	<div class="jlcirpopup" id="popups" style="display:none">
+	<div class="jlcirclose" id="close" style="display:none"></div>
+	<i>June Leighton's Creative Intelligence Robot</i>
+	<br><br>
+	A short silent animated film that speaks about the ideas of "art making" that may arise in the future when artificial intelligence is able to solve problems creatively. I designed a small handheld robot called the CIR-8, something that would be used within creative thinking jobs in the future in a similar way that calculators are used today. It would be advertised as a device to aid artists and designers to help conjure up creative ideas quickly. This animation shows how one certain user is affected by this device and ends up getting used to it as the primary artist or creator.
+	<br>
+	<br>
+	<center>
+	<iframe src="https://player.vimeo.com/video/122923471" width="500" height="355" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</center>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div id="pop11" class="boxes">
+	A display typeface for a hypothetical magazine.
+	</div>
+	
+	<div id="pop12" class="boxes">
+	valspetportraits.com
+	</div>
+	
+	<div class="petspopup" id="popups" style="display:none">
+	<div class="petsclose" id="close" style="display:none"></div>
+	valspetportraits.com
+	<br>
+	<br>a website to request and view watercolor pet portrait commissions.
+	<br>
+	<br>
+	
+	<center>
+	<a href="http://www.valspetportraits.com">Click Here To Go To Site</a>
+	</center>
+	</div>
+	
+	
+	
+	<div id="pop13" class="boxes">
+	A book showcasing the positive visual language of product advertisements aimed towards children against the editorial news stories aimed towards adults containing relative subject matter in a negative way.
+	</div>
+	
+	<div id="pop14" class="boxes">
+	A timeline about the life and work of Milton Glaser.
+	</div>
+	
+	<div id="pop15" class="boxes">
+	Pictorial Analysis of the film, "Fast Cheap and Out of Control".
+	</div>
+	
+	<div id="pop16" class="boxes">
+	Surrealist Iconography.
+	</div>
+	
+	
+	<div id="pop17" class="boxes">
+	<i>Love Me Harder</i>, short film.
+	</div>
+	
+	<div class="lmhpopup" id="popups" style="display:none">
+	<div class="lmhclose" id="close" style="display:none"></div>
+	<i>Love Me Harder</i>
+	<br><br>
+	A video using zero dialogue and solely still imagery to formulate a narrative. <i>Love Me Harder</i> is a story about the intricate relationships girls may have with female popstars that are of similar age. The girl will find the artist, obsess over the artist, want to be like the artist, then feel envious of the artist. The title "Love Me Harder" comes from a song by famous popstar, Ariana Grande. A song title originally about romance has a second meaning when used in this context.
+	<br><br>
+	<center>
+	<iframe src="https://player.vimeo.com/video/110479131" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</center>
+	</div>
+	
+	
+    
+    <div class="watch"><a href="https://www.youtube.com/watch?v=RiKVjS3gR88">nothing</a></div>
+    
+    
+
+		<div class="me"></div>
+		<div class="meclose" id="close" style="display:none"></div>
+		<div class="mepopup" id="popups" style="display:none">
+		<center>
+		<img style="width:100%" src="valorange.gif">
+		</center>
+		<br>
+		Valerie Nelson is a painter and designer currently studying Graphic Design at the Rhode Island School of Design.
+		She can create both emotional and purely informational work and her favorite things are color, composition, and narrative.
+		She is very fascinated with how the media portrays pop stars, especially the young ones. 
+		She also dreams of becoming a popstar, herself, one day. She is also always constantly being nostalgic so it is possible that her childhood memories may emerge from within her school projects.
+		She is allergic to hostility and she can also be corny.
+		<br>
+		</div>
+        
+        
+   <div class="newbg" style="display:none"></div>
+    </body>
+    
+    
+    
+    
+    </html>

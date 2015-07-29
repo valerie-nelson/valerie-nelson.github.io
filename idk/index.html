@@ -73,7 +73,14 @@
     }
     
    
-   
+   ::selection {
+  background: none;
+  color: red; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: none;
+  color: red; /* Gecko Browsers */
+}
    
   
 

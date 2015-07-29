@@ -42,7 +42,17 @@ $('.leafbookbg').hide();
 }); 
 
      
-
+     $('.links').click(function() {
+          $('.linkspop').animate({
+               height: 'toggle'
+               }, 400
+          );
+          
+                   
+          
+     
+     
+     });
 
 
 
@@ -207,13 +217,31 @@ $('.leafbookbg').hide();
    
    
    .links {
+   cursor: pointer;
    color: red;
    position: fixed;
    bottom: 20px;
    left: 25px;
    text-decoration: none;
    font-family: sans-serif;
-   font-size: 24px;
+   font-size: 28px;
+   z-index: 99999;
+   }
+   
+   
+   .linkspop {
+   cursor: pointer;
+   color: red;
+   position: fixed;
+   bottom: 60px;
+   left: 25px;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+   display:none;
+   z-index: 99999;
+   
    }
     
     </style>
@@ -269,7 +297,19 @@ Valerie also currently works at the the RISD Museum, paints commissioned pet por
  
  
  
- <text class="links">+</text>      
+ <text class="links">+</text>  
+  <text class="linkspop">
+  Email
+  <br>
+  Cargo
+  <br>
+  Behance
+  <br>
+  Instagram
+  <br>
+  LinkedIn
+  <br>
+  </text>       
         
         
    

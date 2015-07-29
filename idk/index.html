@@ -27,6 +27,20 @@ $('.valerie').mouseout(function() {
 $('.valeriebg').hide();
 }); 
 
+
+$('.leafbookbg').hide();
+
+
+//When the Image is hovered upon, show the hidden div using Mouseover
+$('.leafbook').mouseover(function() {
+$('.leafbookbg').show();
+});
+
+//When the Image is hovered away from, hide the div using Mouseout
+$('.leafbook').mouseout(function() {
+$('.leafbookbg').hide();
+}); 
+
      
 
 
@@ -166,19 +180,33 @@ $('.valeriebg').hide();
    
    .valerie:hover {
   cursor: pointer;
-  color: white;
+  color: #0f0f0e;
    }
    
-   
-
+ 
 .valeriebg {
  width:100%;
  z-index:5000;
  position: fixed;
  top: 0px;
-
-
  }
+ 
+ .leafbookbg {
+ width:100%;
+ z-index:5000;
+ position: fixed;
+ top: 0px;
+ }
+ 
+ 
+ .leafbook {
+   color: #3be14f;
+   }
+   
+   .leafbook:hover {
+  cursor: pointer;
+  color: #0f0f0e;
+   }
     
     </style>
     
@@ -202,7 +230,7 @@ $('.valeriebg').hide();
 		
 		
 		<div class="info">
-<text class="valerie">Valerie Nelson</text> grew up in West Palm Beach, Florida, where she grew quite fond of the colorful architecture and tropical plants that are often seen as cliche and tacky.
+<text class="valerie">Valerie Nelson</text> grew up in West Palm Beach, Florida, where she grew quite fond of the colorful architecture and <text class="leafbook">tropical plants</text> that are often seen as cliche and tacky.
  As a child she would hide in corners and formulate stories and ideas on paper that she had been unable to verbally express. She would attend small drawing classes and pottery classes at a nearby art center, still seldom speaking out loud.
  Her favorite activities as a child were drawing, intently watching nickelodeon, and swinging on palm fronds.
 <br><br>
@@ -227,7 +255,8 @@ Valerie also currently works at the the RISD Museum, paints commissioned pet por
 		</div>
         
         
- <img class="valeriebg" src="valerie1.gif">       
+ <img class="valeriebg" src="valerie1.gif">
+ <img class="leafbookbg" src="leafbook.gif">         
         
         
    

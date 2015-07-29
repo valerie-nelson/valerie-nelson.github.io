@@ -139,7 +139,11 @@
    z-index: 99999;
    }
    
-   a:hover {
+   .valerie {
+   color: orange;
+   }
+   
+   .valerie:hover {
   cursor: pointer;
   color: white;
    }
@@ -148,6 +152,14 @@
    .valerie:hover .valeriebg{
 display : block;
 }
+
+.valeriebg {
+ width:100%;
+ z-index:5000;
+ position: fixed;
+ top: 0px;
+ display:none;
+ }
     
     </style>
     
@@ -171,7 +183,7 @@ display : block;
 		
 		
 		<div class="info">
-<div class="valerie" style="color:orange;">Valerie Nelson</div> grew up in West Palm Beach, Florida, where she grew quite fond of the colorful architecture and tropical plants that are often seen as cliche and tacky.
+<text class="valerie">Valerie Nelson</text> grew up in West Palm Beach, Florida, where she grew quite fond of the colorful architecture and tropical plants that are often seen as cliche and tacky.
  As a child she would hide in corners and formulate stories and ideas on paper that she had been unable to verbally express. She would attend small drawing classes and pottery classes at a nearby art center, still seldom speaking out loud.
  Her favorite activities as a child were drawing, intently watching nickelodeon, and swinging on palm fronds.
 <br><br>
@@ -196,7 +208,7 @@ Valerie also currently works at the the RISD Museum, paints commissioned pet por
 		</div>
         
         
- <img class="valeriebg" style="display:none; width:100%; z-index:5000;" src="valerie1.gif">       
+ <img class="valeriebg" src="valerie1.gif">       
         
         
    

@@ -17,12 +17,12 @@ $(document).ready(function() {
 $('.valeriebg').hide();
 
 
-//When the Image is hovered upon, show the hidden div using Mouseover
+
 $('.valerie').mouseover(function() {
 $('.valeriebg').show();
 });
 
-//When the Image is hovered away from, hide the div using Mouseout
+
 $('.valerie').mouseout(function() {
 $('.valeriebg').hide();
 }); 
@@ -31,14 +31,28 @@ $('.valeriebg').hide();
 $('.leafbookbg').hide();
 
 
-//When the Image is hovered upon, show the hidden div using Mouseover
+
 $('.leafbook').mouseover(function() {
 $('.leafbookbg').show();
 });
 
-//When the Image is hovered away from, hide the div using Mouseout
+
 $('.leafbook').mouseout(function() {
 $('.leafbookbg').hide();
+}); 
+
+
+$('.radiobg').hide();
+
+
+
+$('.radio').mouseover(function() {
+$('.radiobg').show();
+});
+
+
+$('.radio').mouseout(function() {
+$('.radiobg').hide();
 }); 
 
      
@@ -197,7 +211,16 @@ $('.leafbookbg').hide();
  }
  
  .leafbookbg {
- width: 25%;
+ width: 40%;
+ z-index:99998;
+ position: fixed;
+ top: 35%;
+ left: 40%;
+ }
+ 
+ 
+ .radiobg {
+ width: 40%;
  z-index:99998;
  position: fixed;
  top: 50%;
@@ -266,9 +289,9 @@ $('.leafbookbg').hide();
 		
 		<div class="info">
 	
-<text class="valerie">Valerie Nelson<sup style="color:#ea1800;">1</sup></text> grew up in West Palm Beach, Florida, where she grew quite fond of the colorful architecture and <text class="leafbook">tropical plants<sup style="color:#4c00e1;">2</sup></text> that are often seen as cliche and tacky.
+<text class="valerie">Valerie Nelson<sup style="color:#ea1800;">1</sup></text> grew up in West Palm Beach, Florida, where she became quite fond of the colorful architecture and <text class="leafbook">tropical plants<sup style="color:#4c00e1;">2</sup></text> that are often seen as cliche and tacky.
  As a child she would hide in corners and formulate stories and ideas on paper that she had been unable to verbally express. She would attend small drawing classes and pottery classes at a nearby art center, still seldom speaking out loud.
- Her favorite activities as a child were drawing, intently watching nickelodeon, and swinging on palm fronds.
+ Her favorite activities as a child were drawing while the <text class="radio">radio<sup style="color:#ea1800;">3</sup></text> played, intently watching nickelodeon, and swinging on palm fronds.
 <br><br>
 Valerie had lived her childhood in a sort of daze, primarily day dreaming, and not being entirely self-aware.
  She had viewed “real life” in a way one views a television show, watching very closely, empathizing with others, yet feeling personally disconnected and prohibited from any ability to interact.
@@ -294,6 +317,7 @@ Valerie also currently works at the the RISD Museum, paints commissioned pet por
         
  <img class="valeriebg" src="about1.gif">
  <img class="leafbookbg" src="leaf.gif">   
+ <img class="radiobg" src="radio1.gif">
  
  
  

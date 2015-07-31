@@ -65,28 +65,33 @@ $('.radiobg').hide();
 }); 
 
 
+
+
+
+
+
+
+
+
 $(function() {
     $('.aboutpop').draggable();
   });
 
   
-  
+});  
      
-     $('.links').click(function() {
-          $('.list').animate({
-               height: 'toggle'
-               }, 400
-          );
-          
-                   
-     
-     
-     
-     });
 
 
 
-});
+     
+
+
+
+
+
+
+
+
 
 
 $(document).ready(function() {
@@ -101,6 +106,31 @@ $(document).ready(function() {
      
      
      });
+     
+     
+     
+      $('.links').click(function() {
+          $('.aboutpop,.links,.links2').animate({
+               height: 'toggle'
+               }, 0
+          );
+          
+                   
+          
+      });
+      
+      
+      
+      
+       $('.links2').click(function() {
+          $('.aboutpop,.links,.links2').animate({
+               height: 'toggle'
+               }, 0
+          );
+          
+                   
+          
+      });
      
 
 
@@ -187,10 +217,12 @@ $(document).ready(function() {
 	.info {
     position: absolute;
     padding-top: 10px;
+    padding-left: 1%;
+    border: solid 1px black; 
     top: 0%;
     height: 99%;
     width: 70%;
-    left: 25%;
+    left: 24%;
     color: #f3f438; /* #e1cd06 */
     line-height: 1.15;
     overflow: auto;
@@ -313,6 +345,19 @@ display:none;
    z-index: 99999;
    }
    
+   .links2 {
+   cursor: pointer;
+   color: #2640ff;
+   position: fixed;
+   bottom: 20px;
+   left: 25px;
+   text-decoration: none;
+   font-family: sans-serif;
+   font-size: 28px;
+   z-index: 99999;
+   display:none;
+   }
+   
    
    .linkspop {
    cursor: pointer;
@@ -381,12 +426,15 @@ Valerie also currently works at the the <text class="valerie" style="color:#0f0f
  
  
  <div class="aboutpop">
- test test tessssst
+ Valerie is a graphic designer, painter, digital artist person thing. Here are some links:
+ Behance, Cargo, LinkedIn, Tumblr, Instagram, Email
+ 
  </div>
  
  
  
- <text class="links">+</text>  
+ <text class="links">Show All</text> 
+ <text class="links2">Hide All</text>  
   <text class="linkspop">
   Email
   <br>

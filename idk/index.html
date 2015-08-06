@@ -32,9 +32,7 @@ $('.valeriebg').show();
 });
 
 
-$('.valerie').mouseout(function() {
-$('.valeriebg').hide();
-}); 
+
 
 
 $('.leafbookbg').hide();
@@ -46,9 +44,7 @@ $('.leafbookbg').show();
 });
 
 
-$('.leafbook').mouseout(function() {
-$('.leafbookbg').hide();
-}); 
+
 
 
 $('.radiobg').hide();
@@ -60,9 +56,37 @@ $('.radiobg').show();
 });
 
 
-$('.radio').mouseout(function() {
-$('.radiobg').hide();
-}); 
+
+
+$('.paperbg').hide();
+
+
+
+$('.paper').mouseover(function() {
+$('.paperbg').show();
+});
+
+
+
+$('.childhoodbg').hide();
+
+
+
+$('.childhood').mouseover(function() {
+$('.childhoodbg').show();
+});
+
+
+
+$('.dsoabg').hide();
+
+
+
+$('.dsoa').mouseover(function() {
+$('.dsoabg').show();
+});
+
+
 
 
 
@@ -290,32 +314,55 @@ $(document).ready(function() {
     .radio:hover {
   cursor: pointer;
    }
+ 
+ 
+.imgbox {
+width: 23%;
+
+position: absolute;
+height: 100%;
+left: 0%;
+top: 0%;
+padding: 1%;
+z-index: 99998;
+overflow: auto;
+}
+ 
+ 
+ 
    
  
-.valeriebg {
- width: 30%;
- z-index:99998;
- position: fixed;
- top: 15%;
- left: 10%;
- }
+
  
- .leafbookbg {
- width: 40%;
- z-index:99998;
- position: fixed;
- top: 35%;
- left: 40%;
+ .radiobg,.leafbookbg,.valeriebg,.paperbg,.childhoodbg,.dsoabg {
+ width: 45%;
+ float: left;
+ padding: 2%;
+ font-family: sans-serif;
+ font-size: 18px;
+ color: black;
+ 
  }
  
  
- .radiobg {
- width: 40%;
- z-index:99998;
- position: fixed;
- top: 10%;
- left: 45%;
+ .radiobg,.leafbookbg,.valeriebg,.paperbg,.childhoodbg,.dsoabg:hover {
+ width: 45%;
+ float: left;
+ padding: 2%;
+ font-family: sans-serif;
+ font-size: 18px;
+ color: red;
+ 
  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 .aboutpop {
@@ -406,11 +453,11 @@ display:none;
 		<div class="info">
 	
 <text class="valerie" style="color:#0f0f0e;">Valerie Nelson<sup style="color:#ea1800;">1</sup></text> grew up in West Palm Beach, Florida, where she became quite fond of the colorful architecture and <text class="leafbook" style="color:#0f0f0e;">tropical plants<sup style="color:#4c00e1;">2</sup></text> that are often seen as cliche and tacky.
- As a child she would hide in corners and formulate stories and ideas on <text class="valerie" style="color:#0f0f0e;">paper<sup style="color:#af00ba;">3</sup></text> that she had been unable to verbally express. She would attend small drawing classes and pottery classes at a nearby art center, still seldom speaking out loud.
+ As a child she would hide in corners and formulate stories and ideas on <text class="paper" style="color:#0f0f0e;">paper<sup style="color:#af00ba;">3</sup></text> that she had been unable to verbally express. She would attend small drawing classes and pottery classes at a nearby art center, still seldom speaking out loud.
  Her favorite activities as a child were drawing while the <text class="radio" style="color:#0f0f0e;">radio<sup style="color:#00ba7d;">4</sup></text> played, intently watching nickelodeon, and swinging on palm fronds.
 <br><br>
-Valerie had lived her <text class="valerie" style="color:#0f0f0e;">childhood<sup style="color:#ea1800;">5</sup></text> in a sort of daze, primarily day dreaming, and not being entirely self-aware.
- In 2008, Valerie was accepted into <a href="http://www.awdsoa.org" target="_blank"><text style="color:#0f0f0e;">A.W. Dreyfoos School of the Arts<sup style="color:#af00ba;">6</sup></text></a>.
+Valerie had lived her <text class="childhood" style="color:#0f0f0e;">childhood<sup style="color:#ea1800;">5</sup></text> in a sort of daze, primarily day dreaming, and not being entirely self-aware.
+ In 2008, Valerie was accepted into <a href="http://www.awdsoa.org" target="_blank"><text class="dsoa" style="color:#0f0f0e;">A.W. Dreyfoos School of the Arts<sup style="color:#af00ba;">6</sup></text></a>.
      After a few months, she became comfortable there, and had realized many other students were similar to her.
       There, she was able to <text class="valerie" style="color:#0f0f0e;">paint<sup style="color:#ea1800;">7</sup></text> and <text class="valerie" style="color:#0f0f0e;">animate<sup style="color:#ea1800;">8</sup></text> the ideas and stories she wanted to tell, this time in a more refined and detailed manner than before.
        She also grew a large interest in <text class="valerie" style="color:#0f0f0e;">science fiction<sup style="color:#ea1800;">9</sup></text> at that time, both philosophically and aesthetically.
@@ -428,9 +475,17 @@ Valerie also currently works at the the <text class="valerie" style="color:#0f0f
 		</div>
         
         
- <img class="valeriebg" src="about1.gif">
- <img class="leafbookbg" src="leaf.gif">   
- <img class="radiobg" src="radio1.gif">
+ 
+ <div class="imgbox">
+ <a href="http://www.valerie-nelson.com/about"><img class="valeriebg" src="about1.gif" align="middle"></a>
+ <img class="leafbookbg" src="leaf.gif" align="middle">
+ <img class="paperbg" src="posters.gif" align="middle">
+ <img class="radiobg" src="sunny2.gif" align="middle">
+ <img class="childhoodbg" src="posneg1.gif" align="middle">
+ <a href="http://www.awdsoa.org" target="_blank"><text class="dsoabg">Dreyfoos School of the Arts</text></a>
+ 
+ 
+ </div>
  
  
  <div class="aboutpop">

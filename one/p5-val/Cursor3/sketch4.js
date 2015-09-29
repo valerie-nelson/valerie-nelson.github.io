@@ -84,7 +84,7 @@ function setup() {
 
 
 function draw() {
-   background (255,255,255,50)
+   background (255,255,255,0.5)
    
    //    image(brush1, x, y, 80, 80);
    // image(brush1, y, x, 80, 80);

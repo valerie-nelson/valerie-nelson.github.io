@@ -63,9 +63,16 @@ function setup() {
         cdpause();
         count = CCOUNT;
          cddisplay();
+        if (count == 0) {
+            // time is up
+        } else {
+            count--;
+            t = setTimeout("countdown()", 1000);
+        }
         
-        
-        
+        if (count < 1) {
+            document.getElementById('res').style.visibility='visible';
+        }
     };
 
 

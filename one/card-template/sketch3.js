@@ -5,16 +5,14 @@ function setup() {
 
 function draw() {
 
+    //just showing you a sketch will be a resizable card
+    //delete all this and replace it with your own sketch
     var counter = 0
-    
-    
-    
     //one way of handling multiple input types
     if (touchIsDown || mouseIsPressed) {
-        strokeWeight(2);
-        stroke(255);
-        fill(random(getInputX()), 255, random(getInputX()));
-        quad(counter*20, getInputY(), getInputY(), getInputX(), getInputY(), getInputX(), windowWidth, getInputX());
+        stroke(255, random(100), random(255));
+        fill(random(200), 200, 255);
+        quad(getInputX(), getInputY(), getInputX(), getInputY(), random(windowWidth), windowHeight/2, getInputX(), windowHeight);
         counter = counter + 1;
     }
     

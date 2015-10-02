@@ -54,7 +54,7 @@ function draw() {
         }
         
         
-        quad((counter*20), mouseY, mouseY, mouseX, mouseX, mouseX, mouseX, mouseX);
+        quad((counter*2), mouseY, mouseY, mouseX, mouseX, mouseX, mouseX, mouseX);
         counter = counter + 1
     }
     

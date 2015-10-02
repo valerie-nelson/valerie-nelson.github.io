@@ -5,16 +5,14 @@ function setup() {
 
 function draw() {
 
+    
     var counter = 0
-    
-    
-    
     //one way of handling multiple input types
     if (touchIsDown || mouseIsPressed) {
-        strokeWeight(2);
-        stroke(255);
-        fill(random(getInputX()), 255, random(getInputX()));
-        quad(counter*20, getInputY(), getInputY(), getInputX(), getInputY(), getInputX(), windowWidth, getInputX());
+        
+        stroke(random(getInputX()), random(getInputX()), random(getInputX()));
+        fill(random(getInputX()), random(getInputX()), random(getInputX()));
+        quad(getInputX(), getInputY(), getInputX(), getInputY(), getInputX(), windowHeight, windowWidth, getInputX());
         counter = counter + 1;
     }
     

@@ -32,7 +32,7 @@ function draw() {
     noStroke();
     fill(10,70,255)
     textSize(18);
-    text("enter", 200, 530);
+    text("enter", 200, 330);
     //rect(300,500,40,40);
     
     
@@ -55,7 +55,7 @@ function draw() {
 function mousePressed() {
     
 //image1
-    if (mouseX > 185 && mouseX < 227 && mouseY > 485 && mouseY < 527) {
+    if (mouseX > 185 && mouseX < 227 && mouseY > 285 && mouseY < 327) {
        background (255,100,255,100)
        window.location.href = "http://www.valerie-nelson.com/cursor/1";
     }

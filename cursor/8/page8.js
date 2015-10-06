@@ -13,10 +13,10 @@ function setup() {
 
 
 function draw() {
-    background (255,255,255,100)
+    background (255,255,255,0)
     noStroke();
     fill(10,70,255)
-    rect(550,500,5,5);
+    rect(550,300,5,5);
     
     
   
@@ -44,6 +44,14 @@ function draw() {
     image(brush1, mouseY*0.5, mouseX*0.5, 40, 40)
     image(brush1, mouseY*0.9+500, mouseX*0.9+50, 40, 40)
     
+    image(brush1, mouseY-300*0.7, mouseX-mouseY-200, 40, 40)
+    image(brush1, mouseY+100, mouseX-300*0.8, 40, 40)
+    image(brush1, mouseY-300*0.2, mouseX*0.9-50, 40, 40)
+    image(brush1, mouseY-mouseX+300, mouseY*0.4, 40, 40)
+    image(brush1, mouseY+600, mouseX*0.7, 40, 40);
+    image(brush1, mouseY*0.5-100, mouseX*0.5, 40, 40)
+    image(brush1, mouseY-mouseX*0.9+100, mouseX*0.9+50, 40, 40)
+    
 
     
     
@@ -54,9 +62,9 @@ function draw() {
 function mousePressed() {
     
 //image1
-    if (mouseX > 482 && mouseX < 495 && mouseY > 532 && mouseY < 545) {
+    if (mouseX > 282 && mouseX < 295 && mouseY > 532 && mouseY < 545) {
        background (255,100,255,100)
-   window.location.href = "http://www.valerie-nelson.com";
+       window.location.href = "https://www.youtube.com/watch?v=QnZ0cKLWYWU";
     }
 }
     

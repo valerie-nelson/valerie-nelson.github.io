@@ -38,9 +38,9 @@ function draw() {
 function mousePressed() {
     
 //image1
-    if (mouseX > 498 && mouseX < 542 && mouseY > 298 && mouseY < 342) {
-       
-   alert("yes!")
+    if (mouseX > 485 && mouseX < 542 && mouseY > 285 && mouseY < 342) {
+       background (255,100,255,100)
+       window.location.href = "http://www.valerie-nelson.com/cursor/2";
     }
 }
     

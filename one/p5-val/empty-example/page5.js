@@ -16,7 +16,7 @@ function draw() {
     background (255,255,255,100)
     noStroke();
     fill(10,70,255)
-    rect(300,500,40,40);
+    rect(350,250,5,5);
     
     
   
@@ -26,6 +26,7 @@ function draw() {
 
     //imageMode(CENTER)
     image(brush1, mouseY, mouseX, 40, 40);
+    image(brush1, mouseY-mouseX+100, mouseX+100, 40, 40);
    //image(brush1, mouseY-100, mouseX+20, 1, 1)
     
 
@@ -38,7 +39,7 @@ function draw() {
 function mousePressed() {
     
 //image1
-    if (mouseX > 498 && mouseX < 542 && mouseY > 298 && mouseY < 342) {
+    if (mouseX > 232 && mouseX < 245 && mouseY > 332 && mouseY < 345) {
        
    alert("yes!")
     }

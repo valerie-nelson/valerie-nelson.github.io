@@ -25,7 +25,7 @@ function draw() {
     */
 
 
-   image(brush1, mouseY, mouseX, 80, 80)
+   image(brush1, mouseY, mouseX, 40, 40)
         
     imageMode(CENTER)
 

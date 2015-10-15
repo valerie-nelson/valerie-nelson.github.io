@@ -6,7 +6,7 @@ function setup() {
 
     createCanvas(windowWidth, windowHeight);
     noCursor();
-    brush1 = loadImage("/cur330.png");
+    brush1 = loadImage("cur330.png");
    
  
 }

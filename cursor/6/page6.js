@@ -45,7 +45,7 @@ function mousePressed() {
 //image1
     if (mouseX > 432 && mouseX < 445 && mouseY > 332 && mouseY < 345) {
        background (255,100,255,100)
-       window.location.href = "http://www.valerie-nelson.github.io/cursor/7";
+       window.location.href = "http://valerie-nelson.github.io/cursor/7";
     }
 }
     

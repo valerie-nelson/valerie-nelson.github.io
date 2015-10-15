@@ -6,7 +6,7 @@ function setup() {
 
     createCanvas(windowWidth, windowHeight);
     noCursor();
-    brush1 = loadImage("cur330.png");
+    brush1 = loadImage("/cur330.png");
    
  
 }
@@ -40,7 +40,7 @@ function mousePressed() {
 //image1
     if (mouseX > 330 && mouseX < 342 && mouseY > 581 && mouseY < 590) {
        background (255,100,255,100)
-       window.location.href = "http://www.valerie-nelson.com/cursor/5";
+       window.location.href = "http://www.valerie-nelson.github.io/cursor/5";
     }
 }
     
